@@ -36,12 +36,15 @@ FaceFusion
 在托尼大大来之前，我们可以采取以下临时的解决方案：
 
 Colab 降级到3.10
+```
 # Example: install Python 3.10
 !sudo apt-get update -y
 !sudo apt-get install python3.10 python3.10-distutils -y
 !sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
 !sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 2
 !sudo update-alternatives --config python3
+```
+
 
 # Make pip work with the new Python
 !curl -sS https://bootstrap.pypa.io/get-pip.py | python3
