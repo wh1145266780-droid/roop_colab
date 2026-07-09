@@ -32,7 +32,7 @@ FaceFusion
 
 直接点击 【open in colab】 ，根据笔记本提示一步一步运行即可，熟练之后设置好素材，可以一键运行，详细的使用教程，点[这里](https://www.tonyisstark.com/1240.html) 
 
-
+# 修改错误
 在托尼大大来之前，我们可以采取以下临时的解决方案：
 
 Colab 降级到3.10
@@ -43,13 +43,14 @@ Colab 降级到3.10
 !sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
 !sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 2
 !sudo update-alternatives --config python3
-```
-
 
 # Make pip work with the new Python
 !curl -sS https://bootstrap.pypa.io/get-pip.py | python3
-安装依赖那里改成如下：
+```
 
+安装依赖那里改成如下：（好像改了）
+
+```
 #@title 3.安装依赖
 #有红色警告不用担心！
 %cd /content/roop_colab/roop/
@@ -64,8 +65,11 @@ Colab 降级到3.10
 # install Python packages
 !pip install customtkinter==5.2.0 tkinterdnd2==0.3.0
 
-run.py 文件开头添加
+```
+run.py 文件开头添加(这里改过了)
+
+```
 import os
 os.environ.pop("MPLBACKEND", None)
 os.environ["MPLBACKEND"] = "Agg"
-
+```
