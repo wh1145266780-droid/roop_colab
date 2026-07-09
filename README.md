@@ -3,8 +3,10 @@
 
 
 Roop
-
+博主的:
 [![打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dream80/roop_colab/blob/main/roop_v1.3.1.ipynb)
+修改的:
+[![打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ci5MvSZhdvbba3I6dD4gGV5b4M7j0ZWB?usp=drive_link)
 
 
 FaceFusion
